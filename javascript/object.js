@@ -8,8 +8,8 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "ritesh",
+    "full name": "ritesh maurya",
     [mySym]: "mykey1", //symbol ko use [] ye lga ke karte h nhi to vo string ke type me badal jayega 
     age: 18,
     location: "Jaipur",
@@ -23,9 +23,9 @@ const JsUser = {
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym]) // symbol ko object me aisi hi call karte h 
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "ritesh@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "ritesh@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
