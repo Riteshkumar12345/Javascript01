@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: #000; color: white;">
+    <ul class="langauage">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // type 1  isme ik dikkat h ki hme koi bhi language add krni hogi to puri string ko itreate krna pdta h 
+    function addlanguage(addlang) {
+        const li = document.createElement('li')
+   li.innerHTML = `${addlang}`
+   document.querySelector('.langauage').appendChild(li)
+    }
+    addlanguage("python")
+
+    // type 2 isme hme puri string ko itreate nhi krna pdta h
+
+    function addOptilang(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.langauage').appendChild(li)
+    }
+
+    addOptilang("java")
+
+    //remove
+    const li = document.querySelector("li:last-child")
+    li.remove()
+</script>
+</html>
