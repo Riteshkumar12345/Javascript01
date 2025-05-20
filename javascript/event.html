@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="event">
+        <button id="click">Click me</button>
+        <button id="haal">kya haal chal</button>
+    </div>
+</body>
+  <script>
+    document.getElementById('event').addEventListener('click' , function(e){
+        console.log("click me");
+    },false)
+
+    document.getElementById('haal').addEventListener('click' , function(e){
+        console.log("nhi ho rha h ");
+    },false)
+
+    // ise event propagation h ye two type ka hota h event bubbing aur event capturing
+    // event bubbling me ye chote se bada banta h matlab jo hmara event pr click kiye phle 
+    // vo chelega fir all event wala chelaga isem false likhna hota h issi ke just ulta hota h event capturing 
+  </script>
+</html>
